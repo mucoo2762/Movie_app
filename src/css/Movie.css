@@ -1,0 +1,110 @@
+.Movie{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    text-overflow: ellipsis;
+    padding:0 20px 5px 20px;
+    border-bottom: 1px solid #5B9BD5;
+}
+.movieNumberDiv{
+    width: 5%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F4E79;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.moviePosterDiv{
+    width: 15%;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.moviePosterDiv > span{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    /* color: #203864; */
+    color: rgb(194, 19, 107);
+}
+.movieTextDiv{
+    padding: 20px 0px 20px 40px;
+    width:80%;
+}
+
+.movieTextDiv > h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #203864;
+    margin: 0px;
+}
+.movieDataUploaded{
+    margin: 0px;
+    color: #B4B5BD;
+    margin-bottom: 5px;
+}
+
+.movieTextDiv > .Movie_Genres{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    color: gray;
+    font-size: 15px;
+}
+
+.Movie_Genres .Movie_Genre{
+    margin-right: 10px;
+    color: #B4B5BD;
+}
+
+.Movie_synopsis,.Movie_synopsis_span{
+    height: 90px;
+    text-overflow: ellipsis;
+    /* color: #B4B5BD; */
+    color: black;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.Movie .Movie_Poster{
+    max-width: 100%;
+    position: relative;
+    /* top:-20px; */
+    box-shadow: -10px 19px 38px rgba(83, 83, 83, 0.3), 10px 15px 12px rgba(80, 80, 80, 0.22);
+}
+
+@media screen and (min-width:320px) and (max-width:667px){
+    .Movie{
+        width:100%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 667px) and (orientation: portrait){
+    .Movie{
+        width:100%;
+        flex-direction: column;
+    }
+    .Movie_Poster{
+        top:0;
+        left:0;
+        width:100%;
+    }
+    /* .Movie_Column{
+        width:100%!important;
+    } */
+}
+
+/* ============================================ */
+
+@media only screen and (max-width: 1130px) {
+    .Movie{
+        margin-bottom: 0px;
+        padding:0 20px;        
+    }
+}
