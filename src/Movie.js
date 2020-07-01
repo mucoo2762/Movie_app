@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './css/Movie.css';
-import LinesEllipsis from "react-lines-ellipsis";
 
 
 // ==================================================================
@@ -48,13 +47,6 @@ function Movie({index, title, poster, genres, synopsis, year, rating, date_uploa
                 {/* <span className="movieDataUploaded">date_uploaded : {date_uploaded}</span> */}
                 <div className="Movie_synopsis">
                     {synopsis}
-                    {/* <LinesEllipsis 
-                        text={synopsis}
-                        maxLine="3"
-                        ellipsis="..."
-                        trimRight
-                        basedOn="letters"
-                    /> */}
                 </div>
                 <span className="Movie_synopsis_span">...</span>
             </div>
